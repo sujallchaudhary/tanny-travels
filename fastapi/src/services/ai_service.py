@@ -21,19 +21,23 @@ class AIService:
         )
 
         prompt = f"""
-        Plan a {request.travel_days}-day {request.travel_style} trip from {request.origin} to {request.destination} by {request.means_of_transport}.
+        Plan a detailed {request.travel_days}-day {request.travel_style} trip from {request.origin} to {request.destination} by {request.means_of_transport}.
 
         Include these attractions:
         {attractions_list}
         
-        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
-        Keep the user engaged throughout the day with activities. For each day, provide:
-        - Time
-        - Activity Name
-        - Activity Description (Enhance the provided descriptions to be engaging and concise, but don't lose information)
-        - Redirect Link (Only use the provided links from the input; if no link is available, set it to 'null')
+        Guidelines:
+        - Provide a complete itinerary covering EVERY DAY of the trip. Do not skip any day.
+        - Suggest AT LEAST 3 and AT MOST 5 activities per day. Ensure these activities are realistic and enjoyable.
+        - Assign SPECIFIC visit times in 12-HOUR CLOCK FORMAT (e.g., 9:00 AM, 3:00 PM) for each activity.
+        
+        For each day, provide:
+        - Time: Exact time in 12-hour format (e.g., 10:00 AM)
+        - Activity Name: Clear and engaging activity title
+        - Activity Description: Concise and exciting details (Enhance the provided descriptions and don't lose information, complete if existing description is incomplete)
+        - Redirect Link: Use the provided links only. If no link is available, set it to 'null'.
 
-        Format the response only and only in JSON.
+        Respond ONLY in valid JSON format.
         """
 
         response = self.llm.predict(prompt)
@@ -41,8 +45,6 @@ class AIService:
             response_json = json.loads(response)
         except json.JSONDecodeError:
             raise ValueError("Failed to parse AI response to JSON.")
-
-        return response_json
 
         return response_json
 
@@ -61,17 +63,21 @@ class AIService:
 
         {itinerary_summary}
 
-        The user would like suggestions for improving their itinerary. Take into account the following attractions:
+        The user wants to improve this itinerary. Consider the following attractions:
         {attractions_list}
 
-        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
-        Keep the user engaged and offer suggestions to improve their itinerary. For each day, provide:
-        - Time
-        - Activity Name
-        - Activity Description (if the provided description is incomplete, enhance it to make it more concise, keep it one-liner)
-        - Redirect Link (if available, if not then provide null)
+        Guidelines:
+        - Ensure the itinerary covers ALL {request.travel_days} DAYS of the trip. Do not skip any days.
+        - Suggest 3 TO 5 practical and enjoyable activities per day.
+        - Provide SPECIFIC visit times in 12-HOUR CLOCK FORMAT (e.g., 9:00 AM, 2:30 PM) for each activity.
+        
+        For each day, provide:
+        - Time: Exact time in 12-hour format (e.g., 10:00 AM)
+        - Activity Name: Clear and engaging activity title
+        - Activity Description: Concise and exciting details (Enhance the provided descriptions and don't lose information, complete if existing description is incomplete)
+        - Redirect Link: Use the provided links only. If no link is available, set it to 'null'.
 
-        Format the response only and only in JSON.
+        Respond ONLY in valid JSON format.
         """
 
         response = self.llm.predict(prompt)
