@@ -25,7 +25,8 @@ class AIService:
 
         Include these attractions:
         {attractions_list}
-
+        
+        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
         Keep the user engaged throughout the day with activities. For each day, provide:
         - Time
         - Activity Name
@@ -63,6 +64,7 @@ class AIService:
         The user would like suggestions for improving their itinerary. Take into account the following attractions:
         {attractions_list}
 
+        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
         Keep the user engaged and offer suggestions to improve their itinerary. For each day, provide:
         - Time
         - Activity Name
