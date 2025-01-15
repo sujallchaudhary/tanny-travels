@@ -1,0 +1,674 @@
+{
+  "success": true,
+  "data": {
+    "_id":"1234",
+    "travelDays":5,
+    "origin":"delhi",
+    "destination":"jaipur",
+    "transport":"flight",
+    "travelStyle":"luxury",
+    "date":"2025-01-22",
+    "flights": [
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T23:35:00",
+        "departureTime": "2025-01-22T22:35:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 5136,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T08:50:00",
+        "departureTime": "2025-01-22T07:45:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 2165,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T18:40:00",
+        "departureTime": "2025-01-22T17:25:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 2176,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T09:55:00",
+        "departureTime": "2025-01-22T08:20:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7217,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:10:00",
+        "departureTime": "2025-01-22T17:50:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7468,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T09:55:00",
+        "departureTime": "2025-01-22T08:20:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7217,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:10:00",
+        "departureTime": "2025-01-22T17:50:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7468,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:10:00",
+        "departureTime": "2025-01-22T17:50:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7468,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:10:00",
+        "departureTime": "2025-01-22T17:50:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7468,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T07:00:00",
+        "departureTime": "2025-01-22T05:25:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7742,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T07:00:00",
+        "departureTime": "2025-01-22T05:25:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7742,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:15:00",
+        "departureTime": "2025-01-22T17:35:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7276,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T20:50:00",
+        "departureTime": "2025-01-22T19:10:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7524,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T19:15:00",
+        "departureTime": "2025-01-22T17:35:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7276,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      },
+      {
+        "airLine": {
+          "name": "IndiGo",
+          "code": "6E",
+          "logo": "https://r-xx.bstatic.com/data/airlines_logo/6E.png"
+        },
+        "arrivalTime": "2025-01-22T07:00:00",
+        "departureTime": "2025-01-22T05:25:00",
+        "flightInfo": {
+          "facilities": [],
+          "flightNumber": 7742,
+          "planeType": "",
+          "carrierInfo": {
+            "operatingCarrier": "6E",
+            "marketingCarrier": "6E",
+            "operatingCarrierDisclosureText": ""
+          }
+        }
+      }
+    ],
+
+    "modelResponse": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "time": "9:00 AM",
+            "activity_name": "Dharavi, Dhobighat, and Mumbai Dabbawallas Tour",
+            "activity_description": "Start your day exploring Mumbai's vibrant culture with this offbeat tour.",
+            "redirect_link": "https://example.com/dharavi-tour"
+          },
+          {
+            "time": "2:00 PM",
+            "activity_name": "Lunch at Local Eatery",
+            "activity_description": "Enjoy traditional Mumbai cuisine at a popular local spot."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "time": "10:00 AM",
+            "activity_name": "Elephanta Caves Tour",
+            "activity_description": "Discover the historical rock-cut temples at Elephanta Island.",
+            "redirect_link": "https://example.com/elephanta-caves-tour"
+          }
+        ]
+      }
+    ],
+    "hotels": [
+      {
+        "hotelId": 13337876,
+        "lebel": "Hotel Empire Suites.\n4 out of 5 stars.\n8.2 Very Good 20 reviews.\n‎15 km from downtown‬.\nLimited-time Deal.\n Hotel room : 1 bed.\nOriginal price 22496 INR. Current price 5174 INR..\n+621 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Empire Suites",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/636856962.jpg?k=8212296915b1a55f3ffdff95396c958e016bd5778d2ab5f4a5aac2c8a1c79ae1&o=",
+        "price": {
+          "benefitBadges": [
+            {
+              "explanation": "Limited-time Deal",
+              "text": "Limited-time Deal",
+              "variant": "constructive",
+              "identifier": "Limited Time Deal"
+            }
+          ],
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 620.875186122358 },
+          "grossPrice": { "value": 5173.96, "currency": "INR" },
+          "strikethroughPrice": { "value": 22495.5, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 2999647,
+        "lebel": "Hotel International Inn - Near Delhi Airport.\n3 out of 5 stars.\n8.0 Very Good 1945 reviews.\n‎Mahipalpur‬ • ‎13 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 30860 INR. Current price 27774 INR..\n+3333 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel International Inn - Near Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/522067066.jpg?k=7bce548c7382b551be6362393c59fdd4633c49ee400cf9dd4d52eb5f4ef98f89&o=",
+        "price": {
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 3332.87992550433 },
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "identifier": "Mobile Rate",
+              "variant": "constructive",
+              "text": "Mobile-only price"
+            }
+          ],
+          "grossPrice": { "value": 27774, "currency": "INR" },
+          "strikethroughPrice": { "currency": "INR", "value": 30860 }
+        }
+      },
+      {
+        "hotelId": 11980174,
+        "lebel": "Hotel Ark Wood At Airport.\n3 out of 5 stars.\n7.9 Good 160 reviews.\n‎15 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 8990 INR. Current price 5259 INR..\n+1893 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Ark Wood At Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/598389321.jpg?k=2f2f58b6a2fe2086f454dd6283ff2d1a7bbe8edee1cfc20b3604fccdbffea976&o=",
+        "price": {
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "variant": "constructive",
+              "identifier": "Mobile Rate",
+              "text": "Mobile-only price"
+            }
+          ],
+          "taxExceptions": [],
+          "excludedPrice": { "value": 1893.29398589386, "currency": "INR" },
+          "strikethroughPrice": { "value": 8990, "currency": "INR" },
+          "grossPrice": { "currency": "INR", "value": 5259.15 }
+        }
+      },
+      {
+        "hotelId": 3109409,
+        "lebel": "Hindustan By Backpackers Heaven Near Connaugt Place.\n4 out of 5 stars.\n8.0 Very Good 1104 reviews.\n‎Paharganj‬ • ‎1.3 km from downtown‬.\n Bed in dorm : 1 bed.\nOriginal price 7350 INR. Current price 5880 INR..\n+706 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hindustan By Backpackers Heaven Near Connaugt Place",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/533061736.jpg?k=0c29fae918414c73762f5b8f7bc7ce71e383f5e9e8b87976745d1c393842b8ce&o=",
+        "price": {
+          "grossPrice": { "currency": "INR", "value": 5880 },
+          "strikethroughPrice": { "value": 7350, "currency": "INR" },
+          "benefitBadges": [],
+          "taxExceptions": [],
+          "excludedPrice": { "value": 705.599984228611, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 11703777,
+        "lebel": "Hotel Ark Suites At Airport.\n3 out of 5 stars.\n8.0 Very Good 88 reviews.\n‎15 km from downtown‬.\n Private room : 1 bed.\nOriginal price 8990 INR. Current price 5394 INR..\n+1942 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Ark Suites At Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/595183678.jpg?k=4320376215f261092de1ee95b1d57c9b0a6e2c987530472330a0312f012a3ddc&o=",
+        "price": {
+          "excludedPrice": { "value": 1941.83998553216, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [],
+          "grossPrice": { "currency": "INR", "value": 5394 },
+          "strikethroughPrice": { "currency": "INR", "value": 8990 }
+        }
+      },
+      {
+        "hotelId": 12921250,
+        "lebel": "Super Hotel O Rohini Sector 20 formerly Yellow Saffron.\n3 out of 5 stars.\n5.5 Fair 2 reviews.\n‎Rohini‬ • ‎17 km from downtown‬.\n Hotel room : 1 bed.\nOriginal price 9132 INR. Current price 4109 INR..\n+578 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Super Hotel O Rohini Sector 20 formerly Yellow Saffron",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/634202768.jpg?k=975addafb0a7fa2842a24c5359a377898ad8c6e1a7f397baea7209cc54c797c4&o=",
+        "price": {
+          "grossPrice": { "value": 4109.39, "currency": "INR" },
+          "strikethroughPrice": { "value": 9131.97, "currency": "INR" },
+          "benefitBadges": [],
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 578.126788977757 }
+        }
+      },
+      {
+        "hotelId": 4547065,
+        "lebel": "Olivia Hotels At Delhi Airport.\n3 out of 5 stars.\n8.1 Very Good 1219 reviews.\n‎15 km from downtown‬.\n Hotel room : 1 bed.\nOriginal price 13496 INR. Current price 8097 INR..\n+972 INR taxes and charges.",
+        "name": "Olivia Hotels At Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/375657697.jpg?k=d1eebff44ae238042fd7502a7e46fac24d729c2f310b5142da6be23c806c8e48&o=",
+        "price": {
+          "taxExceptions": [],
+          "excludedPrice": { "value": 971.675978281349, "currency": "INR" },
+          "benefitBadges": [],
+          "strikethroughPrice": { "value": 13495.5, "currency": "INR" },
+          "grossPrice": { "value": 8097.3, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 1340743,
+        "lebel": "Joey's Hostel Delhi.\n8.1 Very Good 1545 reviews.\n‎East Delhi‬ • ‎5 km from downtown‬.\nEarly 2025 Deal.\n Bed in dorm : 1 bed.\nOriginal price 4985 INR. Current price 3988 INR..\n+479 INR taxes and charges.\nNo prepayment needed.",
+        "name": "Joey's Hostel Delhi",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/117093134.jpg?k=95178d208b7316f0b52996bb1e7d4ce143a906f7bece8b0455bc27d77e447eb2&o=",
+        "price": {
+          "excludedPrice": { "value": 478.559989303351, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "explanation": "Early 2025 Deal",
+              "identifier": "Early Year Deals",
+              "variant": "constructive",
+              "text": "Early 2025 Deal"
+            }
+          ],
+          "grossPrice": { "currency": "INR", "value": 3988 },
+          "strikethroughPrice": { "value": 4985, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 5403314,
+        "lebel": "Hotel International Inn by Star Group - Near Delhi Airport.\n3 out of 5 stars.\n8.1 Very Good 791 reviews.\n‎Mahipalpur‬ • ‎13 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 26875 INR. Current price 24188 INR..\n+2902 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel International Inn by Star Group - Near Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/526857337.jpg?k=c68f2085ad91fda276dd7a1615a2b3f7b99a24e64d83ffe3a0e2bedf08ba4ff0&o=",
+        "price": {
+          "grossPrice": { "currency": "INR", "value": 24187.5 },
+          "strikethroughPrice": { "value": 26875, "currency": "INR" },
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 2902.49993512407 },
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "identifier": "Mobile Rate",
+              "variant": "constructive",
+              "text": "Mobile-only price"
+            }
+          ]
+        }
+      },
+      {
+        "hotelId": 172726,
+        "lebel": "Hotel The Daanish Residency - Karol Bagh.\n3 out of 5 stars.\n7.3 Good 64 reviews.\n‎Karol bagh‬ • ‎3.7 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 25500 INR. Current price 13066 INR..\n+1568 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel The Daanish Residency - Karol Bagh",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/473078793.jpg?k=51be238e696e5b74451052bcddf4981602c76a286bd6bede4f947d69b6ae2f19&o=",
+        "price": {
+          "excludedPrice": { "value": 1567.94396495372, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "text": "Mobile-only price",
+              "variant": "constructive",
+              "identifier": "Mobile Rate",
+              "explanation": "Mobile-only price"
+            }
+          ],
+          "grossPrice": { "value": 13066.2, "currency": "INR" },
+          "strikethroughPrice": { "value": 25500, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 10850071,
+        "lebel": "Plazzo Prime Plaza at Delhi Airport.\n3 out of 5 for property rating.\n7.5 Good 242 reviews.\n‎16 km from downtown‬.\nMobile-only price.\n Private room : 1 bed.\nOriginal price 8996 INR. Current price 6117 INR..\n+734 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Plazzo Prime Plaza at Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/592926231.jpg?k=0e799e76515324344351a0dd9f0b2185c2c730ba5985b14afb7c90df4031f0a7&o=",
+        "price": {
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 734.032783593089 },
+          "benefitBadges": [
+            {
+              "variant": "constructive",
+              "identifier": "Mobile Rate",
+              "text": "Mobile-only price",
+              "explanation": "Mobile-only price"
+            }
+          ],
+          "grossPrice": { "currency": "INR", "value": 6116.94 },
+          "strikethroughPrice": { "currency": "INR", "value": 8995.5 }
+        }
+      },
+      {
+        "hotelId": 546375,
+        "lebel": "Hotel Stay Well Dx.\n3 out of 5 stars.\n8.1 Very Good 964 reviews.\n‎Paharganj‬ • ‎1.2 km from downtown‬.\n Hotel room : 1 bed.\nOriginal price 14850 INR. Current price 11138 INR..\n+1336 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Stay Well Dx",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/16627473.jpg?k=5e84e88c75b808789f0b476eaacd4b31c1fbec4597d0b77937f62029ac431f6f&o=",
+        "price": {
+          "taxExceptions": [],
+          "excludedPrice": { "currency": "INR", "value": 1336.4999701269 },
+          "benefitBadges": [],
+          "grossPrice": { "value": 11137.5, "currency": "INR" },
+          "strikethroughPrice": { "currency": "INR", "value": 14850 }
+        }
+      },
+      {
+        "hotelId": 769706,
+        "lebel": "Holiday Inn New Delhi International Airport, an IHG Hotel.\n5 out of 5 stars.\n8.7 Excellent 7676 reviews.\n‎Aerocity‬ • ‎14 km from downtown‬.\n Hotel room : 2 beds.\n123290 INR.\n+24658 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Holiday Inn New Delhi International Airport, an IHG Hotel",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/234890162.jpg?k=9851b545831e5e33fb3df6bc05f843bb0575d31ea421873dea895c2848e2a61d&o=",
+        "price": {
+          "taxExceptions": [],
+          "benefitBadges": [],
+          "excludedPrice": { "value": 24658.0008818388, "currency": "INR" },
+          "grossPrice": { "value": 123290, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 254674,
+        "lebel": "Hotel Baba Deluxe at New Delhi Railway Station -By RCG Hotels.\n3 out of 5 stars.\n8.1 Very Good 2248 reviews.\n‎Paharganj‬ • ‎1.3 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 23200 INR. Current price 13421 INR..\n+1611 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Baba Deluxe at New Delhi Railway Station -By RCG Hotels",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/632086179.jpg?k=329d2fd29db4b49f75fafbefd01e895513c8bf2994fd1c296d4830b389b85f3e&o=",
+        "price": {
+          "strikethroughPrice": { "currency": "INR", "value": 23200 },
+          "grossPrice": { "value": 13421.2, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "text": "Mobile-only price",
+              "identifier": "Mobile Rate",
+              "variant": "constructive"
+            }
+          ],
+          "excludedPrice": { "currency": "INR", "value": 1610.54396400154 }
+        }
+      },
+      {
+        "hotelId": 8076151,
+        "lebel": "Hotel Urban Tree At Delhi Airport.\n3 out of 5 stars.\n8.0 Very Good 933 reviews.\n‎15 km from downtown‬.\n Hotel room : 1 bed.\nOriginal price 11426 INR. Current price 6855 INR..\n+823 INR taxes and charges.\nFree cancellation.",
+        "name": "Hotel Urban Tree At Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/333986760.jpg?k=266a8e44d5e97367d9700978205367c6b0b62fb5209748c27347db7840856c85&o=",
+        "price": {
+          "strikethroughPrice": { "currency": "INR", "value": 11425.5 },
+          "grossPrice": { "value": 6855.3, "currency": "INR" },
+          "taxExceptions": [],
+          "excludedPrice": { "value": 822.635981612653, "currency": "INR" },
+          "benefitBadges": []
+        }
+      },
+      {
+        "hotelId": 10997611,
+        "lebel": "Hotel Transit International- Aerocity Delhi Airport.\n3 out of 5 stars.\n8.1 Very Good 307 reviews.\n‎Mahipalpur‬ • ‎13 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 21870 INR. Current price 19683 INR..\n+2362 INR taxes and charges.",
+        "name": "Hotel Transit International- Aerocity Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/553347284.jpg?k=746574fa1ad7993523f67676e50137ab9a3fb60c81b1c25ab5ed03c723386406&o=",
+        "price": {
+          "grossPrice": { "value": 19683, "currency": "INR" },
+          "strikethroughPrice": { "currency": "INR", "value": 21870 },
+          "excludedPrice": { "value": 2361.95994720608, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "variant": "constructive",
+              "identifier": "Mobile Rate",
+              "text": "Mobile-only price"
+            }
+          ]
+        }
+      },
+      {
+        "hotelId": 719760,
+        "lebel": "Hotel Shri Vinayak at New Delhi Railway Station-By RCG Hotels.\n3 out of 5 stars.\n8.2 Very Good 1960 reviews.\n‎Paharganj‬ • ‎1.3 km from downtown‬.\n Hotel room : 1 bed.\nOriginal price 16996 INR. Current price 10197 INR..\n+1224 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Hotel Shri Vinayak at New Delhi Railway Station-By RCG Hotels",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/613496556.jpg?k=058c46f080996541d2f96fb1f037a0bdd1fc38f844424769f76553bcabc0df3c&o=",
+        "price": {
+          "taxExceptions": [],
+          "excludedPrice": { "value": 1223.69397264831, "currency": "INR" },
+          "benefitBadges": [],
+          "strikethroughPrice": { "value": 16995.75, "currency": "INR" },
+          "grossPrice": { "value": 10197.45, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 5778267,
+        "lebel": "Staybook Hotel Aira New Delhi Railway Station Paharganj.\n4 out of 5 stars.\n7.9 Good 1535 reviews.\n‎Paharganj‬ • ‎1.4 km from downtown‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 14995 INR. Current price 10497 INR..\n+1260 INR taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+        "name": "Staybook Hotel Aira New Delhi Railway Station Paharganj",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/486500158.jpg?k=50af85b26c75096f6270b8099a46fff6697da433c5fb873c42db39261bf2585d&o=",
+        "price": {
+          "excludedPrice": { "value": 1259.57997184619, "currency": "INR" },
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "identifier": "Early Year Deals",
+              "variant": "constructive",
+              "text": "Early 2025 Deal",
+              "explanation": "Early 2025 Deal"
+            }
+          ],
+          "strikethroughPrice": { "currency": "INR", "value": 14995 },
+          "grossPrice": { "value": 10496.5, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 10724667,
+        "lebel": "Hotel S B INN - Near New Delhi Railway Station Paharganj.\n4 out of 5 stars.\n8.3 Very Good 1159 reviews.\n‎Paharganj‬ • ‎1.1 km from downtown‬.\nLimited-time Deal.\n Bed in dorm : 1 bed.\nOriginal price 5500 INR. Current price 3190 INR..\n+383 INR taxes and charges.",
+        "name": "Hotel S B INN - Near New Delhi Railway Station Paharganj",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/528663181.jpg?k=9b95e15a25c26ad33a148e25f4d6881a1dc8766297ac678534fcadc48a832666&o=",
+        "price": {
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "variant": "constructive",
+              "identifier": "Limited Time Deal",
+              "text": "Limited-time Deal",
+              "explanation": "Limited-time Deal"
+            }
+          ],
+          "excludedPrice": { "currency": "INR", "value": 382.799991443753 },
+          "grossPrice": { "value": 3190, "currency": "INR" },
+          "strikethroughPrice": { "value": 5500, "currency": "INR" }
+        }
+      },
+      {
+        "hotelId": 13255233,
+        "lebel": "Hotel Pacefiic Suites Near Delhi Airport.\n4 out of 5 stars.\n9.0 Wonderful 50 reviews.\n‎15 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 7286 INR. Current price 6557 INR..\n+787 INR taxes and charges.",
+        "name": "Hotel Pacefiic Suites Near Delhi Airport",
+        "photoUrl": "https://cf.bstatic.com/xdata/images/hotel/square2000/625655730.jpg?k=73a6ad877b4727137ae1cf5fc60ebf6aa8a04002008e52403dba83c9208e4a9b&o=",
+        "price": {
+          "taxExceptions": [],
+          "benefitBadges": [
+            {
+              "explanation": "Mobile-only price",
+              "identifier": "Mobile Rate",
+              "variant": "constructive",
+              "text": "Mobile-only price"
+            }
+          ],
+          "excludedPrice": { "currency": "INR", "value": 786.88318241179 },
+          "strikethroughPrice": { "currency": "INR", "value": 7285.95 },
+          "grossPrice": { "currency": "INR", "value": 6557.36 }
+        }
+      }
+    ]
+  }
+}
