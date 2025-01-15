@@ -14,10 +14,10 @@ class AIService:
         )
 
     async def generate_itinerary(self, request: TravelRequest, attractions: list[Attraction]):
-        print(request, attractions)
-
         attractions_list = "\n".join(
-            [f"- {attr.name}: {attr.shortDescription} (Price: {attr.price} {attr.currency})" for attr in attractions]
+            [
+                f"- {attr.name}: {attr.shortDescription} (Price: {attr.price} {attr.currency}, Redirect Link: {attr.link if attr.link else 'null'})"
+                for attr in attractions]
         )
 
         prompt = f"""
@@ -25,12 +25,13 @@ class AIService:
 
         Include these attractions:
         {attractions_list}
-
+        
+        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
         Keep the user engaged throughout the day with activities. For each day, provide:
         - Time
         - Activity Name
-        - Activity Description(Give the complete description of the activity if it's incomplete, in fact enhance the pregiven description but just make it concise, keep it one-liner)
-        - Redirect Link (if available, if not then give redirect link as null)
+        - Activity Description (Enhance the provided descriptions to be engaging and concise, but don't lose information)
+        - Redirect Link (Only use the provided links from the input; if no link is available, set it to 'null')
 
         Format the response only and only in JSON.
         """
@@ -40,6 +41,8 @@ class AIService:
             response_json = json.loads(response)
         except json.JSONDecodeError:
             raise ValueError("Failed to parse AI response to JSON.")
+
+        return response_json
 
         return response_json
 
@@ -54,22 +57,21 @@ class AIService:
         )
 
         prompt = f"""
-        Here is the current {request.travel_days}-day itinerary from {request.origin} to {request.destination} by {request.means_of_transport}:
+        The user has planned a {request.travel_days}-day {request.travel_style} trip from {request.origin} to {request.destination} by {request.means_of_transport}. Below is their existing itinerary:
 
         {itinerary_summary}
 
-        Attractions to consider:
+        The user would like suggestions for improving their itinerary. Take into account the following attractions:
         {attractions_list}
 
-        User's feedback: "{request.user_prompt}"
-
-        Based on the feedback, update the itinerary while keeping the user engaged all day. Provide:
+        Give atleast 3 activities and atmost 5 activities per day. Decide this yourself if a person can practically do those activities with complete enjoyment in a day or not.
+        Keep the user engaged and offer suggestions to improve their itinerary. For each day, provide:
         - Time
         - Activity Name
-        - Activity Description
-        - Redirect Link (if available, if not then give redirect link as null)
+        - Activity Description (if the provided description is incomplete, enhance it to make it more concise, keep it one-liner)
+        - Redirect Link (if available, if not then provide null)
 
-        Format the response in JSON.
+        Format the response only and only in JSON.
         """
 
         response = self.llm.predict(prompt)
