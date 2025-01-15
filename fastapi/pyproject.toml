@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tanny-backend"
+version = "0.1.0"
+description = "High-performance Async REST API, in Python. FastAPI + Uvicorn."
+authors = ["Rudr Pratap Singh <rudrpsingh@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+pydantic = "^2.10.5"
+uvicorn = "^0.34.0"
+langchain-openai = "^0.3.0"
+taskipy = "^1.14.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+app = "uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload"
