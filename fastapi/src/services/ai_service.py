@@ -14,10 +14,10 @@ class AIService:
         )
 
     async def generate_itinerary(self, request: TravelRequest, attractions: list[Attraction]):
-        print(request, attractions)
-
         attractions_list = "\n".join(
-            [f"- {attr.name}: {attr.shortDescription} (Price: {attr.price} {attr.currency})" for attr in attractions]
+            [
+                f"- {attr.name}: {attr.shortDescription} (Price: {attr.price} {attr.currency}, Redirect Link: {attr.link if attr.link else 'null'})"
+                for attr in attractions]
         )
 
         prompt = f"""
@@ -29,8 +29,8 @@ class AIService:
         Keep the user engaged throughout the day with activities. For each day, provide:
         - Time
         - Activity Name
-        - Activity Description (if the provided description is incomplete, enhance it to make it more concise, keep it one-liner)
-        - Redirect Link (if available, if not then provide null)
+        - Activity Description (Enhance the provided descriptions to be engaging and concise, but don't lose information)
+        - Redirect Link (Only use the provided links from the input; if no link is available, set it to 'null')
 
         Format the response only and only in JSON.
         """
@@ -40,6 +40,8 @@ class AIService:
             response_json = json.loads(response)
         except json.JSONDecodeError:
             raise ValueError("Failed to parse AI response to JSON.")
+
+        return response_json
 
         return response_json
 
