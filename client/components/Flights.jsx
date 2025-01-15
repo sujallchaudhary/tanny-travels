@@ -12,7 +12,6 @@ const FlightCard = ({ flights }) => {
             key={index}
             className="bg-gray-800 text-white p-6 rounded-lg shadow-md flex flex-col space-y-4"
           >
-            {/* Airline Logo and Name */}
             <div className="flex items-center space-x-4">
               <div className="relative w-12 h-12">
                 <Image
@@ -28,16 +27,12 @@ const FlightCard = ({ flights }) => {
                 <span className="text-sm text-gray-400">Code: {flight.airLine.code}</span>
               </div>
             </div>
-
-            {/* Flight Info */}
             <div>
               <p className="text-sm text-gray-400">Flight Number: {flight.flightInfo.flightNumber}</p>
               <p className="text-sm text-gray-400">
                 Operating Carrier: {flight.flightInfo.carrierInfo.operatingCarrier}
               </p>
             </div>
-
-            {/* Departure and Arrival Times */}
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">Departure</p>

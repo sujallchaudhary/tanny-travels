@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-const Page = () => {
+const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
 
@@ -149,4 +149,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Navbar;

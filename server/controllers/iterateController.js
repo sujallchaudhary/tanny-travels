@@ -52,4 +52,14 @@ catch(error){
 }
 }
 
-module.exports = {createTrip, getTrip};
+const getTrips = async (req,res)=>{
+    try{
+    const trips = await Trip.find().select('origin destination date travelDays transport travelStyle');
+    res.status(201).json({success:true,data:trips});
+}
+catch(error){
+    console.error('Error getting trips:', error.message);
+}
+};
+
+module.exports = {createTrip, getTrip, getTrips};

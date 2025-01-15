@@ -27,12 +27,10 @@ const HotelRecommendations = ({ hotels }) => {
                   <div className="text-center">
                     <p>
                       <span className="line-through">
-                        {hotel.price.strikethroughPrice?.currency}{" "}
-                        {hotel.price.strikethroughPrice?.value}
+                      ₹{hotel.price.strikethroughPrice?.value.toFixed(2)}
                       </span>{" "}
                       <span className="font-bold">
-                        {hotel.price.grossPrice.currency}{" "}
-                        {hotel.price.grossPrice.value}
+                      ₹{hotel.price.grossPrice.value.toFixed(2)}
                       </span>
                     </p>
                     {hotel.price.benefitBadges &&

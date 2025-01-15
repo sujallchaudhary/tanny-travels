@@ -44,9 +44,9 @@ const getAttractions = async (destination) => {
                     price: attraction.representativePrice.chargeAmount,
                     currency: attraction.representativePrice.currency,
                     photo: attraction.primaryPhoto.small,
+                    link: `https://www.booking.com/attractions/${attraction.ufiDetails.url.country}/${attraction.slug}.html`
                 });
             }
-            console.log(attractions);
             return attractions;
         } else {
             console.error('Failed to get attraction data');

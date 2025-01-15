@@ -2,16 +2,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Homepagebg from "../Assets/homepagebg.jpeg";
-import Combobox from "../../components/ui/Combobox";
-import Card from "../Assets/travelcard";
-import Navbar from "../Navbar/page";
+import Combobox from "@/components/ui/Combobox";
 import Radar from "radar-sdk-js";
+import TourRecommendation from "@/components/Tour";
 
 const Page = () => {
   const router = useRouter();
   const radarOriginAutocompleteRef = useRef(null);
   const radarDestinationAutocompleteRef = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const [tripData, setTripData] = useState(null);
+  const api="http://localhost:4500";
 
   const travelDaysOptions = [
     { value: "3", label: "1-3 days" },
@@ -45,8 +46,21 @@ const Page = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (
+      !formData.travelDays ||
+      !formData.origin ||
+      !formData.destination ||
+      !formData.transport ||
+      !formData.travelStyle ||
+      !formData.date
+    ) {
+      alert("Please fill all the fields");
+      return;
+    }
+
     try {
-      const response = await fetch("http://localhost:4500/Iterate", {
+      setLoading(true);
+      const response = await fetch(api+"/iterate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,12 +70,15 @@ const Page = () => {
       const data = await response.json();
 
       if (data.success) {
-        router.push("/iterate/"+data.tripId);
+        setLoading(false);
+        router.push("/iterate/" + data.tripId);
       } else {
-        console.error("Failed to submit form data");
+        setLoading(false);
+        alert("Failed to submit form data");
       }
     } catch (error) {
-      console.error("Error submitting form data:", error);
+      setLoading(false);
+      alert("Error submitting form data:", error);
     }
   };
 
@@ -95,19 +112,33 @@ const Page = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(api+"/iterate");
+      const data = await response.json();
+      if (data.success) {
+        setTripData(data.data);
+      } else {
+        console.error("Failed to fetch trips data");
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
-      <Navbar />
       <div className="min-h-screen w-full">
         <div className="relative min-h-[75vh] w-full">
           <Image
-            src={Homepagebg}
+            src="/homepagebg.jpeg"
             alt="Homepage background"
             className="absolute h-full w-full object-cover"
             priority
+            width={1920}
+            height={1080}
           />
           <div className="absolute top-4 md:top-10 left-1/2 transform -translate-x-1/2 text-center z-20 w-full px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
               Tanny Travels
             </h1>
             <p className="text-base md:text-lg text-red-500 mt-2">
@@ -131,11 +162,17 @@ const Page = () => {
                     onChange={(value) => handleChange("travelDays", value)}
                   />
                 </div>
-                <div className="text-black flex flex-col items-center">
-                  <div id="origin-autocomplete"></div>
+                <div className="text-black bg-white flex flex-col items-center relative">
+                  <div
+                    className="absolute bg-white z-50  text-center w-full  rounded-md"
+                    id="origin-autocomplete"
+                  ></div>
                 </div>
-                <div className="text-black flex flex-col items-center">
-                  <div id="destination-autocomplete"></div>
+                <div className="text-black bg-white flex flex-col items-center relative">
+                  <div
+                    className="absolute bg-white z-50 text-center w-full  rounded-md"
+                    id="destination-autocomplete"
+                  ></div>
                 </div>
               </div>
 
@@ -157,7 +194,8 @@ const Page = () => {
                   />
                 </div>
                 <div className="text-black flex flex-col items-center">
-                  <input required={true}
+                  <input
+                    required={true}
                     type="date"
                     className="px-4 py-2 rounded-lg w-full"
                     onChange={(e) => handleChange("date", e.target.value)}
@@ -167,13 +205,21 @@ const Page = () => {
 
               <button
                 type="submit"
+                disabled={loading}
                 className="px-4 md:px-6 py-2 md:py-3 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition text-sm md:text-base w-full md:w-auto"
               >
-                ✨ Run
+                {loading ? "Loading..." : "✨Plan Trip"}
               </button>
+              {loading && (
+                <div className="text-white">
+                  Our AI model is generating a trip plan for you this might take
+                  30-35 seconds. please wait...
+                </div>
+              )}
             </div>
           </form>
         </div>
+        {tripData && <TourRecommendation tours={tripData} />}
       </div>
     </>
   );
