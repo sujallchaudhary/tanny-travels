@@ -12,7 +12,7 @@ const Page = () => {
   const radarDestinationAutocompleteRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [tripData, setTripData] = useState(null);
-  const api="http://localhost:4500";
+  const api=process.env.NEXT_PUBLIC_API_URL
 
   const travelDaysOptions = [
     { value: "3", label: "1-3 days" },

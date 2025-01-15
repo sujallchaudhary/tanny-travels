@@ -16,7 +16,7 @@ const TripPlanner = () => {
   const [loading, setLoading] = useState(true);
   const [flightVisible, setFlightVisible] = useState(false);
   const params = useParams();
-  const api="http://localhost:4500";
+  const api=process.env.NEXT_PUBLIC_API_URL
   useEffect(() => {
     const fetchTripData = async () => {
       try {
