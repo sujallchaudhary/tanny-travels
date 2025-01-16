@@ -25,6 +25,11 @@ const tripSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    image:{
+        type: String,
+        required: false,
+        trim: true
+    },
     date: {
         type: String,
         required: true,

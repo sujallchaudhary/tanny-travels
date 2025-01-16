@@ -125,7 +125,7 @@ onClick={saveBtnFun}
             </button>
         </div>
 
-        <Image src="/chile1.jpeg" alt="Chile" height={1080} width={1920} />
+        <Image src={tripData.image || '/chile1.jpeg'} alt="Chile" height={1080} width={1920} />
 
         <div
   className={`mt-5 flex space-x-2 border border-gray-700 p-3 rounded-2xl ${

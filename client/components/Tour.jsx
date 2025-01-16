@@ -17,7 +17,7 @@ const TourRecommendation = ({ tours }) => {
                 <Card className="flex flex-col md:flex-row items-center md:items-start overflow-hidden rounded-xl shadow-lg bg-gray-800 text-white">
                   <div className="relative h-48 w-full md:h-64 md:w-1/2">
                     <Image
-                      src="/shimla.jpg"
+                      src={tour.image || '/shimla.jpg'}
                       alt={`${tour.destination} Tour`}
                       layout="fill"
                       objectFit="cover"

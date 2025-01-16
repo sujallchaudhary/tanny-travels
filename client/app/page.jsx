@@ -22,10 +22,7 @@ const Page = () => {
   ];
 
   const transportOptions = [
-    { value: "car", label: "Car" },
-    { value: "train", label: "Train" },
     { value: "plane", label: "Plane" },
-    { value: "bus", label: "Bus" },
   ];
 
   const travelStyleOptions = [
@@ -137,11 +134,11 @@ const Page = () => {
             width={1920}
             height={1080}
           />
-          <div className="absolute top-4 md:top-10 left-1/2 transform -translate-x-1/2 text-center z-20 w-full px-4">
+          <div className="absolute top-4 md:top-10 left-1/2 transform -translate-x-1/2 text-center z-20 md:w-1/2 w-full px-4 bg-black bg-opacity-50">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
               Tanny Travels
             </h1>
-            <p className="text-base md:text-lg text-red-500 mt-2">
+            <p className="text-base md:text-lg text-black/80 mt-2">
               Plan your dream trip.
             </p>
           </div>
